@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "java"
+    id "idea"
+}
+
+idea {
+    module {
+        outputDir file("build/classes/main")
+        testOutputDir file("build/classes/test")
+    }
+}
+
+jar {
+    baseName = rootProject.name
+    version = rootProject.file("VERSION").text.trim()
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    compile("com.google.inject:guice:4.2.0")
+    compile("com.google.http-client:google-http-client:1.23.0")
+    compile("com.google.http-client:google-http-client-xml:1.23.0")
+    compile("org.slf4j:slf4j-api:1.7.25")
+    compile("org.slf4j:slf4j-simple:1.7.25")
+    compile("org.projectlombok:lombok:1.16.22")
+
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
+    testCompile("org.junit.platform:junit-platform-runner:1.2.0")
+    testCompile("org.projectlombok:lombok:1.16.22")
+}
+

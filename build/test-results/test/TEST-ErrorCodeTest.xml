@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ErrorCodeTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-05-30T10:37:17" hostname="Jintaeui-MacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="NORMAL" classname="ErrorCodeTest" time="0.008"/>
+  <testcase name="ERROR" classname="ErrorCodeTest" time="0.001"/>
+  <testcase name="E0001" classname="ErrorCodeTest" time="0.0"/>
+  <testcase name="E0002" classname="ErrorCodeTest" time="0.0"/>
+  <testcase name="E0003" classname="ErrorCodeTest" time="0.0"/>
+  <testcase name="E0005" classname="ErrorCodeTest" time="0.0"/>
+  <testcase name="E0006" classname="ErrorCodeTest" time="0.0"/>
+  <testcase name="E0008" classname="ErrorCodeTest" time="0.001"/>
+  <testcase name="E0009" classname="ErrorCodeTest" time="0.001"/>
+  <testcase name="E0010" classname="ErrorCodeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
